@@ -20,3 +20,16 @@ body {
 .myName {
     background-color: silver;
 }
+
+@media screen and (max width: 992) {
+
+}
+
+
+@media screen and (max width: 768px) {
+
+}
+
+@media screen and (max width: 400px) {
+
+}
