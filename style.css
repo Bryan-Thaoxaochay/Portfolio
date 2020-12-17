@@ -5,3 +5,7 @@ body {
 .container {
     background-color: white;
 }
+
+.side-link {
+    font-size: medium;
+}
