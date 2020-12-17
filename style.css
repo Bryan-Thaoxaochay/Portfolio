@@ -4,6 +4,9 @@ body {
 
 .container {
     background-color: white;
+    border: 5px solid black;
+    padding-bottom: 25px;
+    padding-right: 50px;
 }
 
 .side-link {
