@@ -2,7 +2,7 @@ body {
     background-image: url(https://melbourne-systems.s3.amazonaws.com/asset/file/4fb32d6257817e6d1d000003/placeholder-images.gif);
 }
 
-.container {
+.main {
     background-color: white;
     border: 5px solid black;
     padding-bottom: 25px;
@@ -21,7 +21,13 @@ body {
     background-color: silver;
 }
 
-@media screen and (max width: 992) {
+.footer {
+    background-color: silver;
+    width: 150%;
+    height: 50px;
+}
+
+@media screen and (max width: 992px) {
 
 }
 
