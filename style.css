@@ -1,7 +1,10 @@
+/* Background image of the website*/
 body {
     background-image: url(https://melbourne-systems.s3.amazonaws.com/asset/file/4fb32d6257817e6d1d000003/placeholder-images.gif);
 }
 
+
+/* Adjusting the container of each webpage*/
 .main {
     background-color: white;
     border: 5px solid black;
@@ -9,33 +12,28 @@ body {
     padding-right: 50px;
 }
 
+
+/* Adjusting the Contact, Portfolio, and About Me of the navbar*/
 .side-link {
     font-size: medium;
 }
 
+
+/* Adjusting the title of each container on each webpage*/
 .title {
     font-size: xx-large;
 }
 
+
+/* Adjusting "Bryan Thaoxaochay" on the navbar of each page*/
 .myName {
     background-color: silver;
 }
 
+
+/* Adjusting the footer on each page*/
 .footer {
     background-color: silver;
     width: 150%;
     height: 50px;
-}
-
-@media screen and (max width: 992px) {
-
-}
-
-
-@media screen and (max width: 768px) {
-
-}
-
-@media screen and (max width: 400px) {
-
 }
