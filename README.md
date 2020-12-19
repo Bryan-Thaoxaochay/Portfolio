@@ -46,9 +46,15 @@ The Portfolio page is the simplest one. All it has are five placeholder images w
 
 ## About Me
 
+![](images/HW-2%20About%20Me%20Screenshot.png)
+
 ## Contact
 
+![](images/HW-2%20Contact%20Screenshot.png)
+
 ## Portfolio
+
+![](images/HW-2%20Portfolio%20Screenshot.png)
 
 # Links
 
