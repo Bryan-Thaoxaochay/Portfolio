@@ -60,5 +60,8 @@ The Portfolio page is the simplest one. All it has are five placeholder images w
 
 ## Webpage URL
 
+https://bryan-thaoxaochay.github.io/HW-2-Portfolio/
+
 ## Github Repo
 
+https://github.com/Bryan-Thaoxaochay/HW-2-Portfolio
