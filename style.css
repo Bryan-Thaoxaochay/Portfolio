@@ -7,7 +7,6 @@ body {
 /* Adjusting the container of each webpage*/
 .main {
     background-color: white;
-    border: 5px solid black;
     padding-bottom: 25px;
     padding-right: 50px;
 }
@@ -34,6 +33,5 @@ body {
 /* Adjusting the footer on each page*/
 .footer {
     background-color: silver;
-    width: 150%;
     height: 50px;
 }
