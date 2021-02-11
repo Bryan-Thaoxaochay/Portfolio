@@ -35,6 +35,11 @@ h3 {
 text-align: center;
 }
 
+.GLR {
+    text-decoration: none;
+    color: green;
+}
+
 .portfolioBtn {
     color: white;
     text-decoration: none;
