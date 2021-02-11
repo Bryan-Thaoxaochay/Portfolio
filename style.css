@@ -54,3 +54,11 @@ text-align: center;
     position: fixed;
     bottom: 0;
 }
+
+#footer {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
