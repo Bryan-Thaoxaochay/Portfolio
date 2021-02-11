@@ -35,9 +35,14 @@ h3 {
 text-align: center;
 }
 
+.portfolioBtn {
+    color: white;
+    text-decoration: none;
+}
+
 
 /* Adjusting the footer on each page*/
 .footer {
-    background-color: silver;
+    background-color: darkgray;
     height: 50px;
 }
