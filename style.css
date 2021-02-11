@@ -10,6 +10,7 @@ body {
     background-color: white;
     padding-bottom: 25px;
     padding-right: 50px;
+    padding-left: 50px;
 }
 
 
@@ -28,6 +29,10 @@ body {
 /* Adjusting "Bryan Thaoxaochay" on the navbar of each page*/
 .myName {
     background-color: silver;
+}
+
+h3 {
+text-align: center;
 }
 
 
