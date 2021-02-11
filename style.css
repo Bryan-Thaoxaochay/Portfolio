@@ -50,4 +50,7 @@ text-align: center;
 .footer {
     background-color: black;
     height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }
