@@ -4,10 +4,7 @@
   "description": "# Purpose",
   "main": "index.js",
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:dev": "concurrently \"nodemon --ignore 'reactportfolio/*'\" \"npm run reactportfolio\"",
-    "reactportfolio": "cd reactportfolio && npm run start",
-    "install": "cd reactportfolio && npm install",
+    "start": "cd reactportfolio && npm run build",
     "build": "cd reactportfolio && npm run build"
   },
   "repository": {
