@@ -8,7 +8,7 @@
     "start:dev": "concurrently \"nodemon --ignore 'reactportfolio/*'\" \"npm run reactportfolio\"",
     "reactportfolio": "cd reactportfolio && npm run start",
     "install": "cd reactportfolio && npm install",
-    "build": "cd reactportfolio && npm run build",
+    "build": "cd reactportfolio && npm run build"
   },
   "repository": {
     "type": "git",
