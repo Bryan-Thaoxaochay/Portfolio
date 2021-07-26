@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Row, Container } from '../components/Grid';
+import profilePic from '../images/profile-pic.jpg';
 
 function AboutMe() {
     return (
@@ -12,7 +13,7 @@ function AboutMe() {
             <br></br>
             <Row>
                 <Col size='md-3'>
-                    <img src={"../images/Github-Repo-Profile-Pic-Edited.jpg"} className="img-thumbnail" alt="profile pic" />
+                    <img src={profilePic} className="img-thumbnail" alt="profile pic" />
                 </Col>
                 <Col size='md-3'>
                     <p>

@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 function App() {
     return (
         <Router>
-            <body style={{background: 'yellow'}}>
+            <body>
             <Nav />
             <br></br>
             <Switch>
