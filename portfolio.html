@@ -1,258 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="style.css">
+    <title>Updated Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/intro.css">
+    <link rel="stylesheet" href="./css/applications.css">
+    <link rel="stylesheet" href="./css/aboutme.css">
 </head>
+
 <body>
-
-<!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <nav class="container-fluid">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a class="navbar-brand side-link" href="#portfolio" style="color: white;">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="navbar-brand side-link" href="#aboutme" style="color: white;">About Me</a>
-                </li>
-                <li class="nav-item">
-                  <a class="navbar-brand side-link" href="#contactme" style="color: white;">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a class="navbar-brand side-link" href="updatedPortfolio.html" style="color: white;">Updated Portfolio</a>
-                </li>
-            </ul>
-            </div>
-        </nav>
-      </nav>
-
-<br>
-
-<!--Portfolio Setup-->
-        <section class="container main card">
-
-          <br>
-
-          <div class="row">
-            <div class="col-md-4"></div>
-            <header class="col-md-4 title">
-                <h1>Hi, I am Bryan</h1>
-            </header>
-            <div class="col-md-4"></div>
-          </div>
-          
-          <br>
-
-          <div class="row">
-            <div class="col-md-3">
-              <img src="images/profile-pic.jpg" class="img-thumbnail" alt="profile pic">
-            </div>
-            <div class="col-md-6">
-              <p>I am currently seeking a full-time position related to Full Stack Web Development. I am inexperience, so I am flexible to positions. Below are applications that I've worked on by myself and with others. Please feel free to contact me! Thank you.</p>
-            </div>
-            <div class="col-md-3"></div>
-          </div>
-
-          <br>
-
-          <div class="row">
-            <div class="col-md-4"></div>
-
-            <div class="col-md-4">
-              <div class="row">
-                <div class="col-md-4">
-                  <a href="https://github.com/Bryan-Thaoxaochay" target='_blank' class="GLR">GitHub</a>
-                </div>
-                <div class="col-md-4">
-                  <a href="https://www.linkedin.com/in/bryan-thaoxaochay-2b574013a/" target='_blank' class="GLR">LinkedIn</a>
-                </div>
-                <div class="col-md-4">
-                  <a href="Programming Resume.pdf" download="BryanThaoxaochayResume" class="GLR">Resume</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4"></div>
-          </div>
-
+    <nav id="navbar">
+        <ul>
+            <li class="nav-bullets"><a href="#applications" class="navLinks">Applications</a></li>
+            <li class="nav-bullets"><a href="#aboutme" class="navLinks">About Me</a></li>
+            <li class="nav-bullets"><a href="#contactme" class="navLinks">Contact Me</a></li>
+        </ul>
+    </nav>
 <br>
 <br>
 <br>
+    <main>
+        <!-- Introduction -->
+        <header>Hi, my name is Bryan</header>
+        <img src="./images/profile-pic.jpg" alt="profile-pic" id='profile-pic'>
+        <p id='intro'>I am currently seeking a full-time position related to Full Stack Web Development. I am inexperience, so I am
+        flexible to positions Roles for junior developer seem to be a good spot for me. Below are applications that I've worked on by myself and with others. Please feel
+        free to contact me! Thank you.
+        </p>
+        <a href="https://github.com/Bryan-Thaoxaochay" class="proLinks" id="github" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/bryan-thaoxaochay-2b574013a/" class="proLinks" id="linkedin" target="_blank">LinkedIn</a>
+        <a href="Programming Resume.pdf" class="proLinks" id="resume">Resume</a>
+
+        <!-- Applications -->
+        <a id="applications"><h1>Applications</h1></a>
+
+        <!-- News App -->
+        <h3 id="news-title">WWW News</h3>
+        <img src="./images/newsApp.png" alt="news-app" id="news-image">
+        <ul id="news-bullets">
+            <li>Functions include searching for articles via keywords or by categories on the navigation bar.</li>
+            <li class="bullet-point">Technologies: React.js, CSS, React Bootstrap, Express.js, Node.js, MongoDB, Mongoose, Axios, Auth0, News API</li>
+            <li class="bullet-point">Collaborators: Calvin Jacobsen, Jim Nguyen, Brandon Norrgard, and Noah Schlag</li>
+        </ul>
+        <button id="news-repo"><a href="https://github.com/Bryan-Thaoxaochay/news-app" target="_blank">Visit Repo</a></button>
+        <button id="news-btn"><a href="https://news-app-5.herokuapp.com/" target="_blank">Visit Site</a></button>
+
+        <!-- Park App -->
+        <h3 id="park-title">Park Finder</h3>
+        <img src="./images/park-finder.png" alt="park-app" id="park-image">
+        <ul id="park-bullets">
+            <li>Functions include searching for a park based on amenities chosen.</li>
+            <li class="bullet-point">Technologies: JavaScript, CSS, Handlebars.js, Bootstrap, jQuery, Express.js, Node.js, MySQL, Sequelize, API routing</li>
+            <li class="bullet-point">Collaborators: Calvin Jacobsen, Jim Nguyen, Brandon Norrgard, and Noah Schlag</li>
+        </ul>
+        <button id="park-repo"><a href="https://github.com/BeeNorrg/park_finder_app" target="_blank">Visit Repo</a></button>
+        <button id="park-btn"><a href="https://park-finder-stp.herokuapp.com/" target="_blank">Visit Site</a></button>
+
+        <!-- Food App -->
+        <h3 id="food-title">Feed.Me</h3>
+        <img src="./images/Feed.Me.png" alt="food-app" id="food-image">
+        <ul id="food-bullets">
+            <li>Functions include searching for restaurants based on the city entered.</li>
+            <li class="bullet-point">Technologies: HTML, CSS, JavaScript, AJAX, jQuery, Zomato API, Google Maps API</li>
+            <li class="bullet-point">Collaborators: Calvin Jacobsen, Jim Nguyen, and Francis Jeffries</li>
+        </ul>
+        <button id="food-repo"><a href="https://github.com/jimnguyen220/projectOne" target="_blank">Visit Repo</a></button>
+        <button id="food-btn"><a href="https://jimnguyen220.github.io/projectOneFamilyMatters/" target="_blank">Visit Site</a></button>
+
+        <!-- About Me -->
+        <a id="aboutme"><h3>About Me</h3></a>
+        <!-- Career Goals in Tech -->
+        <h4 class="aboutme-topics" id="career-goals">Why Tech?</h4>
+        <p id="career-answer">I am trying to get into the tech field because of the influence it has on the world. Although there are positives and negatives, I hope to be able to give a positive influence.</p>
+        <!-- Current Interests -->
+        <h4 class="aboutme-topics" id="current-interests">Current Interests</h4>
+        <p id="interests-answer">Current interests as of right now are related to web development. I finished a full-stack program from the University of Minnesota focused on the MERN stack in May. I've learned a ton, but I still have a lot more. Therefore, I've been reading into topics such as JavaScript, data structures, algorithms, and CSS. Other than that, I've also been doing problems on Leetcode. Those are really fun. For now, I am trying to solve the problems. Later in the future, I will strive to write code that is efficient. </p>
+        <!-- Hobbies -->
+        <h4 class="aboutme-topics" id="hobbies">Hobbies</h4>
+        <p id="hobbies-answer">In my free time, I enjoy doing active things such as playing basketball, soccer, or going on a run. Other than that, I am spending too much time on Youtube, watching TV shows or live sports, or hanging out with my friends. I am a huge Milwaukee Bucks fan (NBA) and they just won the title! Congrats to them.</p>
+
+        <div id="space"></div>
+    </main>
+
+    <footer>
+        <section id="contactme">
+            <h5>Contact Me</h5>
 <br>
-
-
-<!--Applications-->
-          <div class="row">
-            <header class="col-md-12">
-              <a id='portfolio'>
-                <h2>Applications Built</h2>
-              </a>
-            </header>
-          </div>
-
-          <figure class="row">
-
-            <h3>WWW News</h3>
-            <br>
-            <div class="col-md-4"><img src="./images/newsApp.png" class="img-thumbnail" alt="News App"></div>
-
-            <div class="col-md-4">
-              <p>The user is able to find articles based on keywords and topics chosen.</p>
-            </div>
-
-            <div class="col-md-4">
-              <button type="button" class="btn btn-primary">
-                <a href="https://github.com/Bryan-Thaoxaochay/news-app" class="portfolioBtn">GitHub Repo</a>
-              </button>
-              <button type="button" class="btn btn-primary">
-                <a href="https://news-app-5.herokuapp.com/" class="portfolioBtn">WWW News</a>
-              </button>
-            </div>
-
-          </figure>
-
-          <br>
-
-          <figure class="row">
-            
-            <h3>Feed.Me</h3>
-            <br>
-            <div class="col-md-4"><img src="./images/Feed.Me.png" class="img-thumbnail" alt="Weather Dashboard"></div>
-            
-            <div class="col-md-4">
-              <p>When the user enters a city, restaurants will appear with details and directions. Fellow collaborators include: Calvin Jacobsen, Francis Jeffries, Jim Nguyen, and Chris Woolcott.</p>
-            </div>
-
-            <div class="col-md-4">
-              <button type="button" class="btn btn-primary">
-                <a href="https://github.com/jimnguyen220/projectOneFamilyMatters" class="portfolioBtn">GitHub Repo</a>
-              </button>
-              <button type="button" class="btn btn-primary">
-                <a href="https://jimnguyen220.github.io/projectOneFamilyMatters/" class="portfolioBtn">Feed.Me</a>
-              </button>
-            </div>
-
-          </figure>
-
-          <br>
-
-          <figure class="row">
-            
-            <h3>Park Finder</h3>
-            <br>
-            <div class="col-md-4"><img src="./images/park-finder.png" class="img-thumbnail" alt="Park Finder"></div>
-            
-            <div class="col-md-4">
-              <p>The user can find certain parks based on locations and amenities. This is only a beginner app, and is still getting edited. Fellow collaborators include: Calvin Jacobsen, Jim Nguyen, Brandon Norrgard, Noah Schlag, and Chris Woolcott.</p>
-            </div>
-  
-            <div class="col-md-4">
-              <button type="button" class="btn btn-primary">
-                <a href="https://github.com/BeeNorrg/park_finder_app" class="portfolioBtn">GitHub Repo</a>
-              </button>
-              <button type="button" class="btn btn-primary">
-                <a href="https://park-finder-stp.herokuapp.com/" class="portfolioBtn">Park Finder</a>
-              </button>
-            </div>
-  
-          </figure>
-
-          <figure class="row" id="row">
-            
-            <h3>Weather Dashboard</h3>
-            <br>
-            <div class="col-md-4"><img src="./images/weather-dashboard.png" class="img-thumbnail" alt="Weather Dashboard"></div>
-            
-            <div class="col-md-4">
-              <p>When the user enters a city, the current forecast and the 5-day forecast are displayed.</p>
-            </div>
-
-            <div class="col-md-4">
-              <button type="button" class="btn btn-primary">
-                <a href="https://github.com/Bryan-Thaoxaochay/HW-6-Weather-Dashboard" class="portfolioBtn">GitHub Repo</a>
-              </button>
-              <button type="button" class="btn btn-primary">
-                <a href="https://bryan-thaoxaochay.github.io/HW-6-Weather-Dashboard/" class="portfolioBtn">Weather Dashboard</a>
-              </button>
-            </div>
-
-          </figure>
-
+            <p>EMAIL: bthaoxaochay@gmail.com</p>
+<br>
+            <p>PHONE NUMBER: (763) 228 - 7187</p>
         </section>
 
-        <br>
-
-<!--Container and Main Content-->
-<main class="container main card">
-      
-  <br>
-  
-          <section class="row">
-              <header class="col-md-12 title">
-                  <a id='aboutme'><h1>Bryan Thaoxaochay</h1></a>
-              </header>
-          </section>
-  
-  <br>
-  
-          <section class="row">
-              <div class="col-md-3">
-                  <img src="images/profile-pic.jpg" class="img-thumbnail" alt="profile pic">
-              </div>
-              <div class="col-md-3">
-                  <p>Hello! I am Bryan. Welcome to my portfolio. I am currently two months in a 6-month program on full stack development from the University of Minnesota - Twin Cities. I recently graduated college in 2020 with a degree in Kinesiology. I majored in Kinesiology because I am a huge fan of sports and athletics. I stay up to date with the English Premier League, NBA, and the NFL. Other than that, I also enjoy playing a lot of sports.</p>
-              </div>
-          </section>
-  
-          <section class="row">
-              <div class="col-md-6">
-                  <p>I enjoy most things that are active, but I really enjoy playing soccer, basketball, or simply running. Besides sports, I am usually spending time with my friends, spending too much time on YouTube, or playing video games.</p>
-              </div>
-          </section>
-  
-        </main>
-  
-  <br>
-
-
-
-<!--Footer-->
-        <footer class="footer" id="footer">
-          <div class="container">
-            <span class="text-muted">
-              <br>
-              <br>
-              <!--Contact Info-->
-              <section class="row">
-                <header class="col-md-12 title">
-                  <a id='contactme'>
-                    <h1>Contact Me</h1>
-                  </a>
-                </header>
-              </section>        
-              <section>
-                <div class="row">
-                  <div class="col-md-6">
-                    <strong>EMAIL</strong>
-                    <p>bthaoxaochay@gmail.com</p>
-                    <strong>PHONE</strong>
-                    <p>(763) 228-7187</p>
-                  </div>
-                  <div class="col-md-6"></div>
-                </div>
-        
-              </section>
-            </span>
-          </div>
-        </footer>
+    </footer>
 
 </body>
+
 </html>
