@@ -13,18 +13,21 @@
 <body>
 
 <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <nav class="container-fluid">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav justify-content-end">
                 <li class="nav-item">
-                  <a class="navbar-brand side-link" href="portfolio.html" style="color: white;">Portfolio</a>
+                  <a class="navbar-brand side-link" href="#portfolio" style="color: white;">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="navbar-brand side-link" href="index.html" style="color: white;">About Me</a>
+                  <a class="navbar-brand side-link" href="#aboutme" style="color: white;">About Me</a>
                 </li>
                 <li class="nav-item">
-                  <a class="navbar-brand side-link" href="contact.html" style="color: white;">Contact</a>
+                  <a class="navbar-brand side-link" href="#contactme" style="color: white;">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="navbar-brand side-link" href="updatedPortfolio.html" style="color: white;">Updated Portfolio</a>
                 </li>
             </ul>
             </div>
@@ -49,7 +52,9 @@
           <br>
 
           <div class="row">
-            <div class="col-md-3"></div>
+            <div class="col-md-3">
+              <img src="images/profile-pic.jpg" class="img-thumbnail" alt="profile pic">
+            </div>
             <div class="col-md-6">
               <p>I am currently seeking a full-time position related to Full Stack Web Development. I am inexperience, so I am flexible to positions. Below are applications that I've worked on by myself and with others. Please feel free to contact me! Thank you.</p>
             </div>
@@ -64,10 +69,10 @@
             <div class="col-md-4">
               <div class="row">
                 <div class="col-md-4">
-                  <a href="https://github.com/Bryan-Thaoxaochay" class="GLR">GitHub</a>
+                  <a href="https://github.com/Bryan-Thaoxaochay" target='_blank' class="GLR">GitHub</a>
                 </div>
                 <div class="col-md-4">
-                  <a href="https://www.linkedin.com/in/bryan-thaoxaochay-2b574013a/" class="GLR">LinkedIn</a>
+                  <a href="https://www.linkedin.com/in/bryan-thaoxaochay-2b574013a/" target='_blank' class="GLR">LinkedIn</a>
                 </div>
                 <div class="col-md-4">
                   <a href="Programming Resume.pdf" download="BryanThaoxaochayResume" class="GLR">Resume</a>
@@ -87,7 +92,9 @@
 <!--Applications-->
           <div class="row">
             <header class="col-md-12">
-              <h2>Applications Built</h2>
+              <a id='portfolio'>
+                <h2>Applications Built</h2>
+              </a>
             </header>
           </div>
 
@@ -183,12 +190,68 @@
 
         <br>
 
+<!--Container and Main Content-->
+<main class="container main card">
+      
+  <br>
+  
+          <section class="row">
+              <header class="col-md-12 title">
+                  <a id='aboutme'><h1>Bryan Thaoxaochay</h1></a>
+              </header>
+          </section>
+  
+  <br>
+  
+          <section class="row">
+              <div class="col-md-3">
+                  <img src="images/profile-pic.jpg" class="img-thumbnail" alt="profile pic">
+              </div>
+              <div class="col-md-3">
+                  <p>Hello! I am Bryan. Welcome to my portfolio. I am currently two months in a 6-month program on full stack development from the University of Minnesota - Twin Cities. I recently graduated college in 2020 with a degree in Kinesiology. I majored in Kinesiology because I am a huge fan of sports and athletics. I stay up to date with the English Premier League, NBA, and the NFL. Other than that, I also enjoy playing a lot of sports.</p>
+              </div>
+          </section>
+  
+          <section class="row">
+              <div class="col-md-6">
+                  <p>I enjoy most things that are active, but I really enjoy playing soccer, basketball, or simply running. Besides sports, I am usually spending time with my friends, spending too much time on YouTube, or playing video games.</p>
+              </div>
+          </section>
+  
+        </main>
+  
+  <br>
+
+
+
 <!--Footer-->
         <footer class="footer" id="footer">
-            <div class="container">
-              <span class="text-muted">
-              </span>
-            </div>
+          <div class="container">
+            <span class="text-muted">
+              <br>
+              <br>
+              <!--Contact Info-->
+              <section class="row">
+                <header class="col-md-12 title">
+                  <a id='contactme'>
+                    <h1>Contact Me</h1>
+                  </a>
+                </header>
+              </section>        
+              <section>
+                <div class="row">
+                  <div class="col-md-6">
+                    <strong>EMAIL</strong>
+                    <p>bthaoxaochay@gmail.com</p>
+                    <strong>PHONE</strong>
+                    <p>(763) 228-7187</p>
+                  </div>
+                  <div class="col-md-6"></div>
+                </div>
+        
+              </section>
+            </span>
+          </div>
         </footer>
 
 </body>

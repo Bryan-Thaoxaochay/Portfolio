@@ -13,6 +13,12 @@ body {
     padding-left: 50px;
 }
 
+nav {
+    position: fixed;
+    background-color: black;
+    height: 50px;
+    z-index: 1;
+}
 
 /* Adjusting the Contact, Portfolio, and About Me of the navbar*/
 .side-link {
@@ -49,7 +55,7 @@ text-align: center;
 /* Adjusting the footer on each page*/
 .footer {
     background-color: black;
-    height: 50px;
+    height: 250px;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -57,7 +63,7 @@ text-align: center;
 
 #footer {
     background-color: black;
-    height: 50px;
+    height: 250px;
     width: 100%;
     position: relative;
     bottom: 0;

@@ -1,0 +1,55 @@
+/* Main Section */
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    column-gap: 25px;
+    row-gap: 25px;
+}
+
+/* Introduction */
+header {
+    grid-row: 1;
+    grid-column: 1/14;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#profile-pic {
+    grid-row: 2;
+    grid-column: 4;
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 90%;
+    width: 90%;
+}
+
+#intro {
+    grid-row: 2;
+    grid-column: 5/10;
+    text-align: center;
+}
+
+.proLinks {
+    text-decoration: none;
+    color: #e85a4f;
+}
+
+#github {
+    grid-row: 3;
+    grid-column: 5;
+    text-align: center;
+}
+
+#linkedin {
+    grid-row: 3;
+    grid-column: 7;
+    text-align: center;
+}
+
+#resume {
+    grid-row: 3;
+    grid-column: 9;
+    text-align: center;
+}
