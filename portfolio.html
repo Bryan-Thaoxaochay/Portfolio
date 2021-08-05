@@ -8,96 +8,100 @@
     <title>Bryan Thaoxaochay: Web Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/intro.css">
-    <link rel="stylesheet" href="./css/applications.css">
-    <link rel="stylesheet" href="./css/aboutme.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/section.css">
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav id="navbar">
-        <ul>
-            <li class="nav-bullets"><a href="#applications" class="navLinks">Applications</a></li>
-            <li class="nav-bullets"><a href="#aboutme" class="navLinks">About Me</a></li>
-            <li class="nav-bullets"><a href="#contactme" class="navLinks">Contact Me</a></li>
-        </ul>
+        <p class="nav-bullets" id="applications-link"><a href="#applications" class="navLinks">Applications</a></p>
+        <p class="nav-bullets" id="aboutme-link"><a href="#aboutme-title" class="navLinks">About Me</a></p>
+        <p class="nav-bullets" id="contactme-link"><a href="#contactme" class="navLinks">Contact Me</a></p>
+        <p class="nav-bullets" id="github-link"><a href="https://github.com/Bryan-Thaoxaochay" class="navLinks"  target="_blank">Github</a></p>
+        <p class="nav-bullets" id="linkedin-link"><a href="https://www.linkedin.com/in/bryan-thaoxaochay-2b574013a/" class="navLinks"  target="_blank">LinkedIn</a></p>
+        <p class="nav-bullets" id="resume-link"><a href="Resume.pdf" class="navLinks">Resume</a></p>
     </nav>
 <br>
 <br>
 <br>
-    <main>
-        <!-- Introduction -->
-        <header>Hi, my name is Bryan</header>
-        <img src="./images/profile-pic.jpg" alt="profile-pic" id='profile-pic'>
-        <p id='intro'>I am currently seeking a full-time position related to Full Stack Web Development. I am inexperience, so I am
-        open to many positions. Below are applications that I've worked on along with others. Please feel
-        free to contact me withy any questions or thoughts! Thank you.
-        </p>
+    <!-- Introduction -->
+    <header>
+        <h1 id='title'>HEY, I AM BRYAN</h1>
+        <img src="./images/Bryan-Atlas-Cropped.jpg" alt="Bryan-Atlas" id='top-pic'>
+        <p id='intro'>A WEB DEVELOPER</p>
         <a href="https://github.com/Bryan-Thaoxaochay" class="proLinks" id="github" target="_blank">Github</a>
         <a href="https://www.linkedin.com/in/bryan-thaoxaochay-2b574013a/" class="proLinks" id="linkedin" target="_blank">LinkedIn</a>
-        <a href="Programming Resume.pdf" class="proLinks" id="resume">Resume</a>
+        <a href="Resume.pdf" class="proLinks" id="resume">Resume</a>
+        <p id='current-status'>Currently looking for opportunities</p>
+    </header>
 
-        <!-- Applications -->
-        <a id="applications"><h1>Applications</h1></a>
+    <!-- Applications -->
+    <main>
+        <a id="applications"><h2>Applications</h2></a>
 
         <!-- News App -->
-        <h3 id="news-title">WWW News</h3>
-        <img src="./images/newsApp.png" alt="news-app" id="news-image">
-        <ul id="news-bullets">
-            <li>Functions include searching for articles via keywords or by categories on the navigation bar.</li>
-            <li class="bullet-point">Technologies: React.js, CSS, React Bootstrap, Express.js, Node.js, MongoDB, Mongoose, Axios, Auth0, News API</li>
-            <li class="bullet-point">Collaborators: Calvin Jacobsen, Jim Nguyen, Brandon Norrgard, and Noah Schlag</li>
-        </ul>
-        <button id="news-repo"><a href="https://github.com/Bryan-Thaoxaochay/news-app" target="_blank">Visit Repo</a></button>
-        <button id="news-btn"><a href="https://news-app-5.herokuapp.com/" target="_blank">Visit Site</a></button>
+        <section id='news-app'>
+            <h3 id="news-title">WWW News</h3>
+            <img src="./images/newsApp.png" alt="news-app" id="news-image">
+            <ul id="news-bullets">
+                <li>Functions include searching for articles via keywords or by categories on the navigation bar.</li>
+                <li class="bullet-point">Technologies: React.js, CSS, React Bootstrap, Express.js, Node.js, MongoDB, Mongoose, Axios, Auth0, News API</li>
+                <li class="bullet-point">Collaborators: Calvin Jacobsen, Jim Nguyen, Brandon Norrgard, and Noah Schlag</li>
+            </ul>
+            <button id="news-repo"><a href="https://github.com/Bryan-Thaoxaochay/news-app" target="_blank">Visit Repo</a></button>
+            <button id="news-btn"><a href="https://news-app-5.herokuapp.com/" target="_blank">Visit Site</a></button>
+        </section>
 
         <!-- Park App -->
-        <h3 id="park-title">Park Finder</h3>
-        <img src="./images/park-finder.png" alt="park-app" id="park-image">
-        <ul id="park-bullets">
-            <li>Functions include searching for a park based on amenities chosen.</li>
-            <li class="bullet-point">Technologies: JavaScript, CSS, Handlebars.js, Bootstrap, jQuery, Express.js, Node.js, MySQL, Sequelize, API routing</li>
-            <li class="bullet-point">Collaborators: Calvin Jacobsen, Jim Nguyen, Brandon Norrgard, and Noah Schlag</li>
-        </ul>
-        <button id="park-repo"><a href="https://github.com/BeeNorrg/park_finder_app" target="_blank">Visit Repo</a></button>
-        <button id="park-btn"><a href="https://park-finder-stp.herokuapp.com/" target="_blank">Visit Site</a></button>
-
+        <secion id='park-app'>
+            <h3 id="park-title">Park Finder</h3>
+            <img src="./images/park-finder.png" alt="park-app" id="park-image">
+            <ul id="park-bullets">
+                <li>Functions include searching for a park based on amenities chosen.</li>
+                <li class="bullet-point">Technologies: JavaScript, CSS, Handlebars.js, Bootstrap, jQuery, Express.js, Node.js, MySQL, Sequelize, API routing</li>
+                <li class="bullet-point">Collaborators: Calvin Jacobsen, Jim Nguyen, Brandon Norrgard, and Noah Schlag</li>
+            </ul>
+            <button id="park-repo"><a href="https://github.com/BeeNorrg/park_finder_app" target="_blank">Visit Repo</a></button>
+            <button id="park-btn"><a href="https://park-finder-stp.herokuapp.com/" target="_blank">Visit Site</a></button>
+        </secion>
+        
         <!-- Food App -->
-        <h3 id="food-title">Feed.Me</h3>
-        <img src="./images/Feed.Me.png" alt="food-app" id="food-image">
-        <ul id="food-bullets">
-            <li>Functions include searching for restaurants based on the city entered.</li>
-            <li class="bullet-point">Technologies: HTML, CSS, JavaScript, AJAX, jQuery, Zomato API, Google Maps API</li>
-            <li class="bullet-point">Collaborators: Calvin Jacobsen, Jim Nguyen, and Francis Jeffries</li>
-        </ul>
-        <button id="food-repo"><a href="https://github.com/jimnguyen220/projectOne" target="_blank">Visit Repo</a></button>
-        <button id="food-btn"><a href="https://jimnguyen220.github.io/projectOneFamilyMatters/" target="_blank">Visit Site</a></button>
+        <secion id='food-app'>
+            <h3 id="food-title">Feed.Me</h3>
+            <img src="./images/Feed.Me.png" alt="food-app" id="food-image">
+            <ul id="food-bullets">
+                <li>Functions include searching for restaurants based on the city entered.</li>
+                <li class="bullet-point">Technologies: HTML, CSS, JavaScript, AJAX, jQuery, Zomato API, Google Maps API</li>
+                <li class="bullet-point">Collaborators: Calvin Jacobsen, Jim Nguyen, and Francis Jeffries</li>
+            </ul>
+            <button id="food-repo"><a href="https://github.com/jimnguyen220/projectOne" target="_blank">Visit Repo</a></button>
+            <button id="food-btn"><a href="https://jimnguyen220.github.io/projectOneFamilyMatters/" target="_blank">Visit Site</a></button>
+        </secion>
+    </main>
 
+    <section id='aboutme-section'>
         <!-- About Me -->
-        <a id="aboutme"><h3>About Me</h3></a>
+        <a id="aboutme-title"><h3>About Me</h3></a>
         <!-- Career Goals in Tech -->
         <h4 class="aboutme-topics" id="career-goals">Why Tech?</h4>
-        <p id="career-answer">I am trying to get into the tech field because of the influence it has on the world. Although there are positives and negatives, I hope to be able to give a positive influence.</p>
+        <p id="career-answer">Technology has always been interesting to me. Ever since robotics in high school, I was always curious about it. I strayed away from tech because of my love for sports. I've come back to it though because of the huge influence it can have on the world. Although there are positives and negatives, I hope to be able to give a positive influence.</p>
         <!-- Current Interests -->
         <h4 class="aboutme-topics" id="current-interests">Current Interests</h4>
-        <p id="interests-answer">Current interests as of right now are related to web development. I finished a full-stack program from the University of Minnesota focused on the MERN stack in May. I've learned a ton, but I still have a lot more. Therefore, I've been reading into topics such as JavaScript, data structures, algorithms, and CSS. Other than that, I've also been doing problems on Leetcode. Those are really fun. For now, I am trying to solve the problems. Later in the future, I will strive to write code that is efficient. </p>
+        <p id="interests-answer">Current interests as of right now are related to web development. I finished a full-stack program from the University of Minnesota focused on the MERN stack in May. I've learned a ton, but I still have a lot more. Therefore, I've been reading into topics such as JavaScript, data structures, algorithms, and CSS. Other than that, I've also been doing problems on Leetcode and doing side projects that will eventually end up on here.</p>
         <!-- Hobbies -->
         <h4 class="aboutme-topics" id="hobbies">Hobbies</h4>
         <p id="hobbies-answer">In my free time, I enjoy doing active things such as playing basketball, soccer, or going on a run. Other than that, I am spending too much time on Youtube, watching TV shows or live sports, or hanging out with my friends. I am a huge Milwaukee Bucks fan (NBA) and they just won the title! Congrats to them.</p>
+    </section>
 
-        <div id="space"></div>
-    </main>
-
-    <footer>
-        <section id="contactme">
-            <h5>Contact Me</h5>
-<br>
-            <p>EMAIL: bthaoxaochay@gmail.com</p>
-<br>
-            <p>PHONE NUMBER: (763) 228 - 7187</p>
-        </section>
-
+    <!-- Footer -->
+    <footer id='contactme'>
+        <img src="./images/profile-pic.jpg" alt="profile-pic" id='profile-pic'>
+        <h5>Contact Me</h5>
+        <p id='email'>EMAIL: bthaoxaochay@gmail.com</p>
+        <p id='phone'>PHONE NUMBER: (763) 228 - 7187</p>
+        <p id='farewell-message'>Feel free to contact me with any questions.</p>
     </footer>
-
 </body>
-
 </html>
