@@ -228,3 +228,102 @@ button a {
         font-size: 10px;
     }
 }
+
+@media screen and (max-width: 440px) {
+    main {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(24, 1fr);
+        column-gap: 25px;
+        row-gap: 25px;
+    }
+
+    #news-app {
+        grid-row: 4/10;
+        grid-column: 1/15;
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        column-gap: 10px;
+        background-color: #eae7dc;
+        padding: 10px 0px;
+    }
+
+    #park-app {
+        grid-row: 11/17;
+        grid-column: 1/15;
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        column-gap: 10px;
+        background-color: #eae7dc;
+        padding: 10px 0px;
+    }
+
+    #food-app {
+        grid-row: 18/24;
+        grid-column: 1/15;
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        column-gap: 10px;
+        background-color: #eae7dc;
+        padding: 10px 0px;
+    }
+
+    #news-title, #park-title, #food-title {
+        grid-row: 1;
+        grid-column: 1/15;
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+        align-self: center;
+    }
+    
+    #news-image, #park-image {
+        grid-row: 2/4;
+        grid-column: 2/14;
+        height: 35%;
+        width: 100%;
+    }
+
+    #food-image {
+        grid-row: 2/4;
+        grid-column: 2/14;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #news-bullets, #park-bullets, #food-bullets {
+        grid-row: 4/6;
+        grid-column: 1/15;
+        text-align: center;
+        align-self: center;
+        font-size: 12px;
+    }
+    
+    #news-repo, #park-repo, #food-repo {
+        grid-row: 6;
+        grid-column: 8/10;
+        background-color: white;
+        border: 1px solid #e98074;
+        height: 40%;
+        width: 100%;
+        align-self: flex-start;
+        padding: 2.5px 0px;
+        font-size: 10px;
+    }
+    
+    #news-btn, #park-btn, #food-btn {
+        grid-row: 6;
+        grid-column: 6/8;
+        background-color: white;
+        border: 1px solid #e98074;
+        height: 40%;
+        width: 100%;
+        align-self: flex-start;
+        padding: 2.5px 0px;
+        font-size: 10px;
+    }
+}
