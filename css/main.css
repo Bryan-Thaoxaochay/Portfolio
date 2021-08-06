@@ -239,6 +239,15 @@ button a {
         row-gap: 25px;
     }
 
+    #applications {
+        grid-row: 2;
+        grid-column: 1/15;
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        color: #e85a4f;
+    }
+
     #news-app {
         grid-row: 4/10;
         grid-column: 1/15;

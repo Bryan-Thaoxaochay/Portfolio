@@ -118,3 +118,69 @@
         font-size: 10px;
     }
 }
+
+@media screen and (max-width: 430px) {
+    #aboutme-section {
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        row-gap: 5px;
+        background-color: #eae7dc;
+        padding: 50px 0px;
+    }
+    
+    #aboutme-title {
+        grid-row: 1;
+        grid-column: 1/15;
+        text-align: center;
+        align-self: center;
+        font-weight: bold;
+        font-size: 40px;
+        color: #e85a4f;
+    }
+
+    #career-goals {
+        grid-row: 2;
+        grid-column: 1/15;
+        text-align: center;
+        align-self: flex-end;
+    }
+    
+    #current-interests {
+        grid-row: 4;
+        grid-column: 1/15;
+        text-align: center;
+        align-self: flex-end;
+    }
+    
+    #hobbies {
+        grid-row: 6;
+        grid-column: 1/15;
+        text-align: center;
+        align-self: flex-end;
+    }
+
+    #career-answer {
+        grid-row: 3;
+        grid-column: 1/15;
+        text-align: center;
+        align-self: flex-start;
+        font-size: 10px;
+    }
+    
+    #interests-answer {
+        grid-row: 5;
+        grid-column: 1/15;
+        text-align: center;
+        align-self: flex-start;
+        font-size: 10px;
+    }
+    
+    #hobbies-answer {
+        grid-row: 7;
+        grid-column: 1/15;
+        text-align: center;
+        align-self: flex-start;
+        font-size: 10px;
+    }
+}
