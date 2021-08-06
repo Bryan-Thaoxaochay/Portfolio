@@ -26,7 +26,7 @@ button a {
     color: #e98074;
 }
 
-/* News App */
+/* News Section */
 #news-app {
     grid-row: 4/8;
     grid-column: 1/15;
@@ -38,46 +38,7 @@ button a {
     padding: 10px 0px;
 }
 
-#news-title {
-    grid-row: 1;
-    grid-column: 6/8;
-    text-align: left;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-#news-image {
-    grid-row: 1/4;
-    grid-column: 2/6;
-    height: 100%;
-    width: 100%;
-}
-
-#news-bullets {
-    grid-row: 2/4;
-    grid-column: 6/11;
-    text-align: left;
-}
-
-#news-repo {
-    grid-row: 3;
-    grid-column: 11;
-    background-color: white;
-    border: 1px solid #e98074;
-    height: 75%;
-    padding: 2.5px 0px;
-}
-
-#news-btn {
-    grid-row: 2;
-    grid-column: 11;
-    background-color: white;
-    border: 1px solid #e98074;
-    height: 75%;
-    padding: 2.5px 0px;
-}
-
-/* Park App */
+/* Park Section */
 #park-app {
     grid-row: 9/13;
     grid-column: 1/15;
@@ -89,46 +50,7 @@ button a {
     padding: 10px 0px;
 }
 
-#park-title {
-    grid-row: 1;
-    grid-column: 6/8;
-    text-align: left;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-#park-image {
-    grid-row: 1/4;
-    grid-column: 2/6;
-    height: 100%;
-    width: 100%;
-}
-
-#park-bullets {
-    grid-row: 2/4;
-    grid-column: 6/11;
-    text-align: left;
-}
-
-#park-repo {
-    grid-row: 3;
-    grid-column: 11;
-    background-color: white;
-    border: 1px solid #e98074;
-    height: 75%;
-    padding: 2.5px 0px;
-}
-
-#park-btn {
-    grid-row: 2;
-    grid-column: 11;
-    background-color: white;
-    border: 1px solid #e98074;
-    height: 75%;
-    padding: 2.5px 0px;
-}
-
-/* Food App */
+/* Food Section */
 #food-app {
     grid-row: 14/18;
     grid-column: 1/15;
@@ -140,28 +62,29 @@ button a {
     padding: 10px 0px;
 }
 
-#food-title {
+#news-title, #park-title, #food-title {
     grid-row: 1;
-    grid-column: 6/8;
+    grid-column: 6/15;
     text-align: left;
     font-weight: bold;
     font-size: 25px;
+    align-self: center;
 }
 
-#food-image {
+#news-image, #park-image, #food-image {
     grid-row: 1/4;
     grid-column: 2/6;
     height: 100%;
     width: 100%;
 }
 
-#food-bullets {
+#news-bullets, #park-bullets, #food-bullets {
     grid-row: 2/4;
     grid-column: 6/11;
     text-align: left;
 }
 
-#food-repo {
+#news-repo, #park-repo, #food-repo {
     grid-row: 3;
     grid-column: 11;
     background-color: white;
@@ -170,11 +93,138 @@ button a {
     padding: 2.5px 0px;
 }
 
-#food-btn {
+#news-btn, #park-btn, #food-btn {
     grid-row: 2;
     grid-column: 11;
     background-color: white;
     border: 1px solid #e98074;
     height: 75%;
     padding: 2.5px 0px;
+}
+
+@media screen and (max-width: 850px) {
+    #news-title, #park-title, #food-title {
+        grid-row: 1;
+        grid-column: 8/15;
+        text-align: left;
+        font-weight: bold;
+        font-size: 25px;
+        align-self: center;
+    }
+    
+    #news-image, #park-image, #food-image {
+        grid-row: 1/4;
+        grid-column: 2/8;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #news-bullets, #park-bullets, #food-bullets {
+        grid-row: 2/4;
+        grid-column: 8/13;
+        text-align: left;
+    }
+    
+    #news-repo, #park-repo, #food-repo {
+        grid-row: 3;
+        grid-column: 13/15;
+        background-color: white;
+        border: 1px solid #e98074;
+        height: 75%;
+        width: 75%;
+        padding: 2.5px 0px;
+    }
+    
+    #news-btn, #park-btn, #food-btn {
+        grid-row: 2;
+        grid-column: 13/15;
+        background-color: white;
+        border: 1px solid #e98074;
+        height: 75%;
+        width: 75%;
+        padding: 2.5px 0px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #news-app {
+        grid-row: 4/8;
+        grid-column: 1/15;
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 10px;
+        background-color: #eae7dc;
+        padding: 10px 0px;
+    }
+
+    #park-app {
+        grid-row: 9/13;
+        grid-column: 1/15;
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 10px;
+        background-color: #eae7dc;
+        padding: 10px 0px;
+    }
+
+    #food-app {
+        grid-row: 14/18;
+        grid-column: 1/15;
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 10px;
+        background-color: #eae7dc;
+        padding: 10px 0px;
+    }
+
+    #news-title, #park-title, #food-title {
+        grid-row: 1;
+        grid-column: 9/15;
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+        align-self: center;
+    }
+    
+    #news-image, #park-image, #food-image {
+        grid-row: 1/4;
+        grid-column: 2/9;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #news-bullets, #park-bullets, #food-bullets {
+        grid-row: 2/4;
+        grid-column: 9/15;
+        text-align: center;
+        align-self: center;
+        font-size: 12px;
+    }
+    
+    #news-repo, #park-repo, #food-repo {
+        grid-row: 1;
+        grid-column: 10/12;
+        background-color: white;
+        border: 1px solid #e98074;
+        height: 20%;
+        width: 100%;
+        align-self: flex-end;
+        padding: 2.5px 0px;
+        font-size: 10px;
+    }
+    
+    #news-btn, #park-btn, #food-btn {
+        grid-row: 1;
+        grid-column: 12/14;
+        background-color: white;
+        border: 1px solid #e98074;
+        height: 20%;
+        width: 100%;
+        align-self: flex-end;
+        padding: 2.5px 0px;
+        font-size: 10px;
+    }
 }
